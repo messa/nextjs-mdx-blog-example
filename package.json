@@ -1,0 +1,26 @@
+{
+  "name": "nextjs-mdx-blog-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./build_post_index && next",
+    "export": "node ./build_post_index && next build && next export",
+    "build": "node ./build_post_index && next build",
+    "start": "exec next start",
+    "clean": "rm -rf out .next posts.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Petr Messner",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "7.0.0-beta.42",
+    "@mdx-js/loader": "^0.9.0",
+    "@mdx-js/mdx": "^0.9.0",
+    "@zeit/next-mdx": "^1.0.0",
+    "next": "^6.0.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
+}
