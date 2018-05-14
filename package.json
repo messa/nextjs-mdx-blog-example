@@ -8,6 +8,7 @@
     "export": "node ./build_post_index && next build && next export",
     "build": "node ./build_post_index && next build",
     "start": "exec next start",
+    "static-server": "cd out && python3 -m http.server",
     "clean": "rm -rf out .next posts.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
