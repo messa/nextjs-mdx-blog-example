@@ -14,10 +14,10 @@ $ npm install && npm run export && cd out && now deploy
 TODO
 ----
 
-- some basic CSS
-- layout for posts
+- ✅ some basic CSS
+- ✅ layout for posts
 - more info in this readme - how to create post, post attributes
 - add more complex post example - with image, custom component, video
-- try to retrieve post title from the markdown h1 title
+- try to retrieve post title from the markdown `<h1>` title
 - describe deployment process using webhooks, CI etc.
 - automate deployment of this example
