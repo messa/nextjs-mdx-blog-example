@@ -1,6 +1,8 @@
 Simple static blog made with [Next.js](https://github.com/zeit/next.js) and [MDX](https://github.com/mdx-js/mdx)
 ================================================================================================================
 
+Live demo: [nextjs-mdx-blog-example.now.sh](https://nextjs-mdx-blog-example.now.sh/)
+
 Deployment
 ----------
 
