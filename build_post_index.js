@@ -63,9 +63,9 @@ function readPostMetadata(postPath) {
   const mod = requireMDXFileSync(postPath)
   const { meta } = mod
   return {
-    path: postPath,
+    filePath: postPath,
+    urlPath: postPath.replace(/\\/, '/').replace(/^pages/, '').replace(/\.mdx?$/, ''),
     title: meta.title || path.basename(postPath),
-    slug: meta.slug || postPath.replace(/^pages[/\\]/, '').replace(/\.mdx?$/, ''),
     publishDate: new Date(meta.publishDate),
   }
 }
