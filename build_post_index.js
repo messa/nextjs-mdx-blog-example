@@ -2,6 +2,7 @@ const mdx = require('@mdx-js/mdx')
 const babel = require("@babel/core")
 const fs = require('fs')
 const path = require('path')
+const RSS = require('rss')
 
 function requireFromStringSync(src, filename) {
   const Module = module.constructor;
@@ -70,6 +71,23 @@ function readPostMetadata(postPath) {
   }
 }
 
+function generateRSS(posts) {
+  const siteUrl = 'https://nextjs-mdx-blog-example.now.sh'
+  const feed = new RSS({
+    title: 'My blog',
+    site_url: siteUrl,
+  })
+  posts.map(post => {
+    feed.item({
+      title: post.title,
+      guid: post.urlPath,
+      url: siteUrl + post.urlPath,
+      date: post.publishDate,
+    })
+  })
+  return feed.xml({ indent: true })
+}
+
 function main() {
   const postPaths = scanDir('pages', '.mdx')
   //console.debug({ postPaths })
@@ -86,6 +104,10 @@ function main() {
     `export default ${postsJSON}\n`
   )
   console.info(`Saved ${posts.length} posts in ${exportPath}`)
+  const rssPath = 'static/rss-feed.xml'
+  const rssXML = generateRSS(posts)
+  fs.writeFileSync(rssPath, rssXML)
+  console.info(`Saved RSS feed to ${rssPath}`)
 }
 
 main()

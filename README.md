@@ -3,6 +3,7 @@ Simple static blog made with [Next.js](https://github.com/zeit/next.js) and [MDX
 
 Live demo: [nextjs-mdx-blog-example.now.sh](https://nextjs-mdx-blog-example.now.sh/)
 
+
 Deployment
 ----------
 
@@ -18,6 +19,7 @@ TODO
 
 - ✅ some basic CSS
 - ✅ layout for posts
+- ✅ RSS feed
 - more info in this readme - how to create post, post attributes
 - add more complex post example - with image, custom component, video
 - try to retrieve post title from the markdown `<h1>` title

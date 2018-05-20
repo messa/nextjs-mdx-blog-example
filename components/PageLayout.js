@@ -63,6 +63,7 @@ export default ({ pathname, children }) => {
       <Head>
         <title>{title}</title>
         <style>{globalStyles}</style>
+        <link rel="alternate" type="application/rss+xml" href="/static/rss-feed.xml" />
       </Head>
       <div className='contentContainer'>
         <SiteTitle isHomepage={pathname === '/'} />

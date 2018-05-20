@@ -2,3 +2,4 @@ node_modules
 .next
 out
 posts.js
+static/rss-feed.xml
