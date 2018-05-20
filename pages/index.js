@@ -20,7 +20,11 @@ export default () => (
     ))}
     <p style={{ textAlign: 'right' }}>
       <a rel="alternate" type="application/rss+xml" href="/static/rss-feed.xml">
-        <img src='/static/rss-feed-icon-28x28.png' alt='RSS feed' />
+        <img src='/static/rss-feed-icon-28x28.png' alt='RSS feed' width='28' height='28' />
+      </a>
+      {' '}
+      <a href="https://github.com/messa/nextjs-mdx-blog-example">
+        <img src='/static/github-icon-64x64.png' alt='Github repo' width='28' height='28' />
       </a>
     </p>
   </div>
