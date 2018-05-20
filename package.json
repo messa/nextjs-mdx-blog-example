@@ -10,6 +10,7 @@
     "start": "exec next start",
     "static-server": "cd out && python3 -m http.server",
     "clean": "rm -rf out .next posts.js",
+    "deploy": "npm run clean && npm run export && cd out && now deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
