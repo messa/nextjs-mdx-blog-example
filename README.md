@@ -17,6 +17,7 @@ $ npm install && npm run export && cd out && now deploy
 TODO
 ----
 
+- ✅ automatically generate list of all posts from the .mdx files
 - ✅ some basic CSS
 - ✅ layout for posts
 - ✅ RSS feed
