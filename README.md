@@ -13,6 +13,11 @@ Build a static website and deploy using [now.sh](https://zeit.co/now):
 $ npm install && npm run export && cd out && now deploy
 ```
 
+Similar projects
+----------------
+
+- https://github.com/johnlindquist/next-mdx-blog
+
 
 TODO
 ----
