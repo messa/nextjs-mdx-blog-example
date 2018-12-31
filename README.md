@@ -17,6 +17,7 @@ Similar projects
 ----------------
 
 - https://github.com/johnlindquist/next-mdx-blog
+- https://github.com/lorenseanstewart/nextjs-mdx-blog-kit
 
 
 TODO
